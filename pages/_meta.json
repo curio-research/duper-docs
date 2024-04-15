@@ -1,15 +1,33 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "intro": "Introduction",
+  "core-game": {
+    "title": "Core Game",
+    "type": "separator"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "index": "Quick Start",
+  "wiki": "Game Wiki",
+  "meta": {
+    "title": "Meta Game",
+    "type": "separator"
+  },
+  "rewards": "Rewards",
+  "season": "Seasons",
+  "play": {
+    "title": "Play ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://play.duper.gg",
+    "newWindow": true
+  },
+  "twitter": {
+    "title": "Twitter ↗",
+    "type": "page",
+    "href": "https://twitter.com/playduper",
+    "newWindow": true
+  },
+  "discord": {
+    "title": "Discord ↗",
+    "type": "page",
+    "href": "https://discord.com/invite/duper",
     "newWindow": true
   }
 }

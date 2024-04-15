@@ -1,0 +1,41 @@
+# Units
+
+Units in Duper include troops and buildings, and troops include ground troops and air troops. To produce a unit, click on a tile and the Production Panel will show up to the right of the map.
+
+A few general rules regarding units:
+
+- Each tile can only have 1 class of air troop and 1 class of ground troop at once, but there is no limit on how many troops there are.
+- Each tile can only have 1 building. There cannot be multiple buildings on the same tile.
+- Troops can move and initiate attacks. Troops may only attack an adjacent tile.
+- Buildings can neither move nor initiate attacks, but they have defense strength and may also die if defense fails.
+
+There are occasional exceptions to the above as we shall see below.
+
+### Unit Table
+
+Below is a list of all unit classes in Duper:
+
+| Unit Class                 | Production Cost                    | Spawn Location | Layer    | Movement Stamina | Strength | Death Priority       | Class Exceptions                                      |
+| :------------------------- | :--------------------------------- | :------------- | :------- | :--------------- | :------- | :------------------- | :---------------------------------------------------- |
+| Infantry                   | 1 gold                             | anywhere       | ground   | 1                | 1        | 1                    |                                                       |
+| Tank                       | 1 gold and 1 pair                  | capital lv1-3  | ground   | 5                | 3        | 2, or 5 if assisting | can assist                                            |
+| Plane                      | 3 gold, 1 flush, 1 plane blueprint | capital lv1-3  | air      | 7                | 4        | 3                    | can perform long-distance moves and attacks; can load |
+| Fort                       | 3 gold, 1 flush, 1 fort blueprint  | anywhere       | building | 0                | 7        | 6                    | can initiate attacks                                  |
+| Academy                    | 1 straight                         | anywhere       | building | 0                | 1        | 6                    |                                                       |
+| Capital lv1                | -                                  | -              | building | 0                | 12       | 6                    |                                                       |
+| Capital lv2                | 12 gold                            | capital lv1    | building | 0                | 16       | 6                    | replaces capital lv1; deals 1 card                    |
+| Capital lv3                | 22 gold                            | capital lv2    | building | 0                | 22       | 6                    | replaces capital lv2; deals 2 cards                   |
+| Capital lv4 (Supercapital) | 1 self-minted gem                  | capital lv3    | ground   | 5                | 20       | 4                    | replaces capital lv3                                  |
+
+- Movement stamina is the number of tiles a unit can move per round by L1 distance, i.e. x-distance plus y-distance.
+- The lower a class’s death priority is, the earlier the class dies in a battle.
+
+### Class Exceptions
+
+- Tanks can assist: The strengths of tanks on a tile may be included in battles (both attacks and defenses) involving adjacent tiles owned by the same player. The player may choose to toggle the assist mode of tanks by tile at any time.
+- Planes can perform long-distance moves and attacks: A player may use planes to move onto a disconnected owned tile or to attack a non-adjacent enemy tile, provided that the planes have enough movement stamina to reach destination.
+- Planes can load: Each plane can load at most 1 ground troop for any period of time. Loaded troops are not taken into account for movement stamina and battle strength calculations.
+  - Loading troops is only recommended for transporting troops, because if the plane dies in a battle, the loaded troops will also die.
+- Forts can initiate attacks: Unlike other buildings, such as tanks or a super capital, a fort may be used to initiate attacks, but does not move onto the target tile if the attack succeeds.
+- Level-2 to level-4 capitals aren’t produced per se. They are upgraded from the previous level, usually for the extra gold yield and strength.
+  - A special case is the upgrade from level-3 to level-4: The capital transforms from a building to a ground troop and thereby gains the ability to move and initiate attacks. However, the player also permanently loses the high capital gold yield as well as the ability to produce tanks and planes.

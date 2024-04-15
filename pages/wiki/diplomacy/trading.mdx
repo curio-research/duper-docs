@@ -1,0 +1,21 @@
+# Trading
+
+Trades are how resources flow between players. They are initiated by a player and must be accepted by the recipient player to take place.
+
+There are 5 different types of trades in Duper:
+
+| Trade Class      | Initiator gets         | Recipient gets                           | Initiator Prerequisite                 | Usage Limit |
+| ---------------- | ---------------------- | ---------------------------------------- | -------------------------------------- | ----------- |
+| Buy blueprint    | 1 chosen blueprint     | 1 initiator-minted gem                   | -                                      | unlimited   |
+| Swap cards       | 1 chosen card          | 1 provided card + 1 initiator-minted gem | adjacent to recipient or has economist | 2 per round |
+| Sell gem         | 4 gold                 | 1 sold gem (cannot be initiator-minted)  | has economist                          | 1 per round |
+| Swap gems        | 1 recipient-minted gem | 2 gold + 1 initiator-minted gem          | has economist                          | 1 per round |
+| Buy attack point | 1 attack point         | 1 initiator-minted gem                   | -                                      | 1 per game  |
+
+Note that whatever the initiator gets comes from the recipient, and vice versa. For example, if Player A initiates a “swap gems” trade to Player B but does not have at least 2 gold, the request will fail.
+
+More details:
+
+- Buy blueprint: If a player wants a plane or a fort but does not have the corresponding researcher, he may wishes to initiate a “buy blueprint” trade to a player who has the researcher.
+- Swap cards: Player A may mark his cards for sale by clicking on them in the Card Section and then clicking “Sell”. Then, other players who either own an adjacent tile to the player’s tiles or own an economist would see those cards for sale on the top of the chat. One of them, Player B, may then initiate the “swap card” trade by clicking on her desired card and providing one of her own cards.
+- Sell gem: Note that the initiator may only sell a gem he owns that is not minted by him. The “sell gem” trade often creates unexpected shifts in diplomacy.
