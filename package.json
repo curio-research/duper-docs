@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "@fontsource/space-mono": "^5.0.19",
+    "daisyui": "^4.10.1",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@types/node": "18.11.10",

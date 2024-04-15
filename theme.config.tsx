@@ -1,17 +1,39 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import { useRouter } from "next/router";
 
 const config: DocsThemeConfig = {
-  logo: <span>Duper</span>,
+  logo: <span className="logo">Duper</span>,
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    return {
+      titleTemplate: asPath === "/" ? "Duper" : "%s – Duper Developer",
+    };
+  },
   project: {
-    link: "https://play.duper.gg",
+    link: "https://github.com/curio-research/duper-docs",
   },
-  chat: {
-    link: "https://discord.com/duper",
-  },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  head: (
+    <>
+      <meta property="title" content="Duper Docs" />
+      <link rel="icon" href="/favicon.ico" />
+    </>
+  ),
+  docsRepositoryBase:
+    "https://github.com/curio-research/duper-docs/tree/main/docs",
   footer: {
-    text: "Nextra Docs Template",
+    text: "© 2024 Duper",
+  },
+  primaryHue: {
+    dark: 190,
+    light: 190,
+  },
+  // primarySaturation: {
+  //   dark: 100,
+  //   light: 80,
+  // },
+  sidebar: {
+    defaultMenuCollapseLevel: 3,
   },
 };
 
