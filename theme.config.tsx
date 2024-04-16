@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
-      titleTemplate: asPath === "/" ? "Duper" : "%s – Duper Developer",
+      titleTemplate: asPath === "/" ? "Duper" : "%s – Duper",
     };
   },
   project: {

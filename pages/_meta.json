@@ -1,5 +1,8 @@
 {
   "intro": "Introduction",
+  "modes": "Game Modes",
+  "progression": "Progression System",
+  "rewards": "Rewards",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
@@ -10,8 +13,7 @@
     "title": "Meta Game",
     "type": "separator"
   },
-  "rewards": "Rewards",
-  "season": "Seasons",
+  "seasons": "Seasons and Launchpad",
   "play": {
     "title": "Play ↗",
     "type": "page",
@@ -29,5 +31,8 @@
     "type": "page",
     "href": "https://discord.com/invite/duper",
     "newWindow": true
+  },
+  "_app": {
+    "display": "hidden"
   }
 }
