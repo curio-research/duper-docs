@@ -4,17 +4,17 @@
 
 ### What is Duper?
 
-Duper is an onchain wagering social war game, inspired by Poker, Into the Breach, and Diplomacy.
+Duper is an onchain wagering social war game, inspired by games like Poker, Into the Breach, and Diplomacy.
 
-Each game session hosts 5 players and lasts ~40 minutes. Each player enters a game with real stake (currently 0.005 ETH minimum) and gems representing “equity”. Duper is NOT a winner-take-all game: When a game ends, only one player wins, but the pot is divided based on how many winner’s gems each player holds. _The winner may not be the biggest earner._
+Each game session hosts 5 players and lasts ~40 minutes. Each player enters a game with real stake (currently 0.005 ETH minimum) in exchange for gems representing “equity”. Duper is NOT a winner-take-all game: When a game ends, only one player becomes the "settler", but the pot is divided based on how many settler's "equity" each player holds. _The settler may not be the biggest earner._
 
 The most interesting element in Duper is the social diplomacy — secret alliances from resource exchanges, steaming conspiracies, and outright backstabbing are not only allowed, but _encouraged_, in Duper.
 
-![Modeo](../public/game.png)
+![Game Screenshot](../public/game.png)
 
 ### Getting Started
 
-After finishing this page, go on the [game website](https://play.duper.gg), create an account, and try the Playground mode. Explore the actions first, then try to beat the AI. Don't be frustrated if you fail in the first few attempts — most people do!
+After finishing this page, go on the [official website](https://play.duper.gg), create an account, and try the Playground mode. Explore the actions first, then try to beat the AI. Don't be frustrated if you fail in the first few attempts — most people do!
 
 After you've beaten the AI, play a Casual session with real players. This is without real money, so you can continue to practice your skills and observe how the social diplomacy plays out. When you're ready, transfer some Arbitrum ETH into your Privy wallet and deposit it into the game contract to play a Ranked session. Survive the lies ✦
 
@@ -30,25 +30,23 @@ There’re 3 important resource types in Duper:
 2. Card: given at beginning of rounds to each player; used for production.
 3. Gem (like equity): minted by each player at game start and also if/when a player raises (add more stake); used to settle game payout.
 
-### How to Win
+### Session End and Payout
 
-There are two ways to win: either own 12 tiles, or collect a 5-card straight flush. The game ends when a player wins.
+A session ends when a player either owns 12 tiles or collects a 5-card straight flush. That player is referred to as the "settler". The payouts are then settled in the following manner:
 
-### How to _Earn_
+1. The settler takes out their total stake from the pot.
+   - The settler is guaranteed not to lose money and is therefore usually in a good position to earn.
+2. The remaining pot is divided in proportion to how many settler-minted gems each player owns.
 
-_Winning and earning are completely separate in Duper._
+Let’s say each player's stake is \$10 and the total pot is \$50. Alice becomes the settler by collecting a straight flush. Alice first takes out her stake of \$10 from the pot. If Bob owns 5 out of 10 Alice-minted gems, Bob then gets half of the remaining pot, equal to \$20. His net payout would be \$20 - \$10 = \$10.
 
-Let’s say Alice wins in a game. Alice first gets back her stake. The rest of the pot is split between everyone based on how much gems they own that are minted by Alice. For example, if Bob owns 5 out of 10 Alice-minted gems, then Bob gets half of the remaining pot.
+### How to Earn
 
-What does that say about how you should play? Make your judgment how who’s likely to win at all times, and try to get their gems by trading with them and letting them trade with you.
-
-### Social Diplomacy and Deception
-
-Forming soft alliances with another player through owning each other’s minted gems is helpful, because regardless of who wins among the two of you, you both get positive returns. However, gem portfolio is hidden for other players, so you can always choose to switch alliance, and others may do the same. Someone may even offer you lots of gems to get you to help them, and right before they win, they take out your capital by surprise and take back their minted gems, so they earn more. This endless persuasion, trading, and deception form the backbone of Duper.
+The key to earning is to maximize your gem ownership of the eventual settler’s gems. Generally it boils down to two things: Become the settler yourself through meeting one of the Settlement Conditions, or solicit plenty of other players' gems through trading, especially from those you think are in good position to become settler.
 
 ### Tips for a newbie
 
 1. Prioritize conquering barbarian tiles over player tiles, because you don’t get rewards conquering player tiles.
-2. Mark your cards as for sale so other players may trade cards with you (and you also get a gold reward)
-3. Pay attention to your gem portfolio and all players’ tile counts at all times.
-4. If you ever feel stuck, don’t worry, Duper is early so there could still be UI inconsistencies or even minor bugs. Let us know and we appreciate your feedback!
+2. Mark your cards for sale so other players may trade cards with you. This is the most straightforward way you get their gems.
+3. Form soft alliances with another player through owning each other’s minted gems.
+4. If you ever feel stuck, you're not alone — Duper can take quite some effort to master. Feel free to ask for help in the Discord.
