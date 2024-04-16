@@ -1,8 +1,7 @@
 {
   "intro": "Introduction",
   "modes": "Game Modes",
-  "xp": "XP",
-  "rewards": "Rewards",
+  "xp-and-rewards": "XP and Rewards",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
@@ -10,11 +9,10 @@
   "index": "Quick Start",
   "wiki": "Game Wiki",
   "meta": {
-    "title": "Esports",
+    "title": "Upcoming",
     "type": "separator"
   },
   "seasons": "Seasons and Launchpad",
-  "ugc": "Tooling and UGC",
   "play": {
     "title": "Play ↗",
     "type": "page",

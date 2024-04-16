@@ -23,6 +23,7 @@ const config: DocsThemeConfig = {
   footer: {
     text: "© 2024 Duper",
   },
+  darkMode: true,
   primaryHue: {
     dark: 190,
     light: 190,
