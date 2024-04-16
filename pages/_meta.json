@@ -32,8 +32,5 @@
     "type": "page",
     "href": "https://discord.com/invite/duper",
     "newWindow": true
-  },
-  "_app": {
-    "display": "hidden"
   }
 }
