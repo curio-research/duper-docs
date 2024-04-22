@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
   //   light: 80,
   // },
   sidebar: {
-    defaultMenuCollapseLevel: 3,
+    defaultMenuCollapseLevel: 2,
   },
 };
 
