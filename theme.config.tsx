@@ -17,6 +17,18 @@ const config: DocsThemeConfig = {
     <>
       <meta property="title" content="Duper Docs" />
       <link rel="icon" href="/favicon.ico" />
+      <script
+        lang="javascript"
+        dangerouslySetInnerHTML={{
+          __html: `if (!window.localStorage.getItem("theme_default")) {
+            window.localStorage.setItem("theme", "dark");
+            window.localStorage.setItem("theme_default", "dark");
+            document.documentElement.classList.add("dark");
+            document.documentElement.classList.remove("light");
+          }`,
+        }}
+      />
+      ;
     </>
   ),
   docsRepositoryBase: "https://github.com/curio-research/duper-docs/tree/main/",
