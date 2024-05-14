@@ -1,7 +1,15 @@
 # Map
 
-The map is composed of 37 tiles. A tile may be level 1, 2, or 3. There are 20-28 level-1 tiles, 12-16 level-2 tiles, and 4-8 level-3 tiles. The center and corner tiles where players spawn are always level-1 tiles; the other tile levels are randomized. Tile levels don’t change.
+The map is composed of 37 tiles of 3 different tile levels. The center and corner tiles where players spawn are always level-1 tiles; the other tile levels are randomized. Tile levels don’t change.
 
-When a session begins, except the 5 tiles where player capitals spawn, all other tiles have barbarians on them. A level-1 tile has 1 barbarian infantry; a level-2 tile has 3 barbarian infantry; a level-3 tile has 2-3 barbarian tanks.
+Here's the table of tile levels and their properties:
+
+| Tile Level | Count | Barbarian Strength |         One-Time Reward          | Roundly Yield | Tile Buff |
+| :--------- | :---: | :----------------: | :------------------------------: | :-----------: | :-------: |
+| 1          | 13-16 |         1          |             1-3 gold             |       -       |     1     |
+| 2          | 11-14 |         3          | 3 gold or 1 unknown, random card |       -       |     2     |
+| 3          |  3-6  |       6 or 9       | 4 gold or 2 known, random cards  |    1 gold     |     4     |
+
+When a session begins, except the 5 tiles where player capitals spawn, all other tiles have barbarians on them with strengths corresponding to their levels. The "One-Time Reward" is sent out for defeating the barbarians on a tile and capturing the tile for the first time — note that capturing another player's tile does not give any reward. The "Roundly Yield" is sent out to the owner at the beginning of their turn. The "Tile Buff" is the defense buff (only applies to defense, not offense) that the tile gives to the owner's units stationed on it.
 
 A tile’s level and the unit classes on top are visible to players if and only if one of the players owns a tile that is adjacent. A player can see who owns any tile, but does not know the number of troops stationed on any tile except their own. This is a core element of deception — you may tell another player that you own 50 infantries on a valuable tile when you actually just have 1.
