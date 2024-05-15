@@ -6,7 +6,7 @@
 
 Duper is an onchain wagering social war game, inspired by games like Poker, Into the Breach, and Diplomacy. Duper is a game where you can not only have fun, but also earn money by outmaneuvering others.
 
-Each game session hosts 5 players and lasts ~40 minutes. Each player enters a game with real stake (currently 0.005 ETH minimum) in exchange for gems representing “equity”. Duper is NOT a winner-take-all game: When a game ends, only one player becomes the "settler", but the pot is divided based on how many settler's "equity" each player holds. _The settler may not be the biggest earner._
+Each game session hosts 5 players and lasts ~40 minutes. Each player enters a game with real stake (currently 0.005 ETH minimum) in exchange for gems representing “equity”. Duper is NOT a winner-take-all game: When a game ends, only one player "wins", but the pot is divided based on how many winner's "equity" each player holds. _The winner may not be the biggest earner._
 
 The most interesting element in Duper is the social diplomacy — secret alliances from resource exchanges, steaming conspiracies, and outright backstabbing are not only allowed, but _encouraged_, in Duper.
 
@@ -32,27 +32,27 @@ There’re 3 important resource types in Duper:
 
 ### Session End and Payout
 
-A session ends when a player either owns 12 tiles or collects a 5-card _straight flush_ (for what this means, see the [Resources](./wiki/fundamentals/resources#cards) page). That player is referred to as the "settler". The payouts are then settled in the following manner:
+A session ends when a player either owns 12 tiles or collects a 5-card _straight flush_ (for what this means, see the [Resources](./wiki/fundamentals/resources#cards) page). That player is referred to as the "winner". The payouts are then settled in the following manner:
 
-1. The settler takes out their total stake from the pot.
-   - The settler is guaranteed not to lose money and is therefore usually in a good position to earn.
-2. The remaining pot is divided in proportion to how many settler-minted gems each player owns.
+1. The winner takes out their total stake from the pot.
+   - As a result, the winner is guaranteed not to lose money and is therefore usually in a good position to earn.
+2. The remaining pot is divided in proportion to how many winner-minted gems each player owns.
 
-Let’s say each player's stake is \$10 and the total pot is \$50. Alice becomes the settler by collecting a straight flush. Alice first takes out her stake of \$10 from the pot. If Bob owns 5 out of 10 Alice-minted gems, Bob then gets half of the remaining pot, equal to \$20. His net payout would be \$20 - \$10 = \$10.
+Let’s say each player's stake is \$10 and the total pot is \$50. Alice wins by collecting a straight flush. Alice first takes out her stake of \$10 from the pot. If Bob owns 5 out of 10 Alice-minted gems, Bob then gets half of the remaining pot, equal to \$20. His net payout would be \$20 - \$10 = \$10.
 
 ### How to Earn
 
-The key to earning is to maximize your gem ownership of the eventual settler’s gems. Generally it boils down to two things: Become the settler yourself through meeting one of the Settlement Conditions, or solicit plenty of other players' gems through trading, especially from those you think are in good position to become settler.
+The key to earning is to maximize your gem ownership of the eventual winner's gems. Generally it boils down to two things: Win yourself through meeting one of the Victory Conditions, or solicit plenty of other players' gems through trading, especially from those you think are in good position to win.
 
 Still confused? Don't worry. Try the Playground and a few Casual games first. You'll get the hang of it soon.
 
 ### An Example Game
 
-_Alice, Bob, Cindy, David, and Eve enter a game. Alice trades cards with Bob frequently, so Bob owns lots of Alice's gems and decides to help her settle. Cindy and David accumulate each other's gems through gem swaps, so they're in a soft alliance. Eve is a lone wolf._
+_Alice, Bob, Cindy, David, and Eve enter a game. Alice trades cards with Bob frequently, so Bob owns lots of Alice's gems and decides to help her win. Cindy and David accumulate each other's gems through gem swaps, so they're in a soft alliance. Eve is a lone wolf._
 
-_To help Alice settle, Bob starts to prematurely attack Cindy and David, resulting in heavy losses on both sides. In the meantime, Alice expands her territory and increases her gold production by upgrading her capital and acqquiring a few Level-3 tiles. Eve suspects correctly that Bob is the biggest shareholder of Alice's gems and thus makes a great target, so she cozies up to Bob. Bob believes Eve and, having consumed all his gold, ignores defense on their mutual borders. Upon gaining a plane, Eve launches two surprise attacks on Bob and eliminates him, becoming the biggest shareholder of Alice's gems. She then ramps up defense around her capital so nobody can attempt the same on her._
+_To help Alice win, Bob starts to prematurely attack Cindy and David, resulting in heavy losses on both sides. In the meantime, Alice expands her territory and increases her gold production by upgrading her capital and acqquiring a few Level-3 tiles. Eve suspects correctly that Bob is the biggest shareholder of Alice's gems and thus makes a great target, so she cozies up to Bob. Bob believes Eve and, having consumed all his gold, ignores defense on their mutual borders. Upon gaining a plane, Eve launches two surprise attacks on Bob and eliminates him, becoming the biggest shareholder of Alice's gems. She then ramps up defense around her capital so nobody can attempt the same on her._
 
-_Cindy and David are weakened from their battles with Bob, so Alice is now by far the strongest player. Alice attacks on Cindy and finally becomes the settler by tile count. Eve earns the most because she got the most of Alice's gems. Alice also earns a little, because even though she has very few of her own gems left, she gets her stake back before the pot is divided. Cindy and David mostly break even because they each own just a few of Alice's gems. Bob loses all his stake because he got eliminated._
+_Cindy and David are weakened from their battles with Bob, so Alice is now by far the strongest player. Alice attacks Cindy and finally wins by tile count. Eve earns the most because she got the most of Alice's gems. Alice also earns a little, because even though she has very few of her own gems left, she gets her stake back before the pot is divided. Cindy and David mostly break even because they each own just a few of Alice's gems. Bob loses all his stake because he got eliminated._
 
 _The game ends, and everyone is happy. Except Bob, who is salty and swears to make it all back in the next game._
 
