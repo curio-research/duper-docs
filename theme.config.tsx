@@ -1,9 +1,15 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
+import duperLogo from "Duper.png";
 
 const config: DocsThemeConfig = {
-  logo: <span className="logo">Duper</span>,
+  logo: (
+    <>
+      <img alt="logo" style={{ width: "2em" }} src={"/Duper.png"} />
+      <span style={{ marginLeft: ".4em", fontWeight: 800 }}>Duper</span>
+    </>
+  ),
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
