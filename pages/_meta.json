@@ -1,12 +1,14 @@
 {
   "intro": "Introduction",
   "modes": "Game Modes",
+  "referral": "\"Super Duper Host\" Referral Program",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
   },
   "index": "Quick Start",
   "wiki": "Game Wiki",
+  "assets": "Assets",
   "seasons": {
     "title": "Alpha Seasons",
     "type": "separator"
@@ -14,7 +16,7 @@
   "season-1": "[LIVE NOW] Season I",
   "past": "Past",
   "play": {
-    "title": "Play ↗",
+    "title": "Game Website ↗",
     "type": "page",
     "href": "https://www.duper.gg",
     "newWindow": true
