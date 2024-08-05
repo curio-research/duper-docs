@@ -1,20 +1,23 @@
 {
   "intro": "Introduction",
   "modes": "Game Modes",
-  "xp-and-rewards": "XP and Rewards",
+  "community-rules": "Community Rules",
+  "referral": "Referral Program",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
   },
   "index": "Quick Start",
   "wiki": "Game Wiki",
-  "meta": {
-    "title": "Upcoming",
+  "assets": "Assets",
+  "seasons": {
+    "title": "Seasons",
     "type": "separator"
   },
-  "seasons": "Seasons",
+  "season-1": "[LIVE NOW] Season I",
+  "past": "Past",
   "play": {
-    "title": "Play ↗",
+    "title": "Game Website ↗",
     "type": "page",
     "href": "https://www.duper.gg",
     "newWindow": true

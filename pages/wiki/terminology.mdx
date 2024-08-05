@@ -1,13 +1,13 @@
 # Terminology
 
 - Duper has two principal components, which we shall refer to as the **_map_** and the **_chat_**.
-- A **_tile_** is the main spacial unit of Duper. The **_map_** has 37 tiles in total. A tile may be owned by a player. Two tiles are **_adjacent_** if and only if they share an edge.
-- Each of the 5 players start with a **_capital_** on a fixed tile. The player whose capital is at the center of the map is referred to as the **_dealer_**.
+- A **_tile_** is the main spacial unit of Duper. The **_map_** has 37 tiles in total. A tile may be owned by a player. Two tiles are **_adjacent_** if they share an edge.
+- Each of the 5 players start with a **_capital_** on a fixed tile. The middle player is always the player who has the earliest turn order, and is referred to as the **_dealer_**.
 - There are opportunities for players to **_raise_** during the session.
-- A **_round_** is the main temporal unit of Duper. Within each round, players have their **_turns_** in sequence starting from the dealer. A player may only attack during their own turn, but may perform any other action outside of their turn.
+- A **_round_** is the main temporal unit of Duper. Within each round, players have their **_turns_** in sequence starting from the dealer. A player may attack only during their own turn, but may perform any other action (e.g. trading, production, movement) outside of their turn.
 - Tiles may host **_units_**, the umbrella term for **_troops_** and **_buildings_**. At any given time, each tile can host at most 1 class of **_air troop_**, 1 class of **_ground troop_**, and 1 building.
-- Buildings except the capital may train **_talents_**.
+- Research centers train **_talents_** which unlock special abilities.
 - The main production resources in Duper are **_gold_** (fungible) and **_cards_** (non-fungible). The main diplomatic resource is **_gems_** (semi-fungible).
 - Card combos used in production may later trigger **_combo rewards_**.
-- The chat is composed of 4 private **_channels_** with the other 4 players. Resources flow between players through **_trades_** that get proposed and accepted in those channels.
-- When a player meets a **_victory condition_**, the session ends and the pot is divided as payouts to the players.
+- For each player, the chat is composed of 4 private **_channels_** with the other 4 players. Resources flow between players through **_trades_** that get proposed and accepted in those channels.
+- When a player meets a **_victory condition_**, the session ends and the pot is divided as payouts to the players based on gem ownership.

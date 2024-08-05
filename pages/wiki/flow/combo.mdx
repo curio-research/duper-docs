@@ -1,14 +1,23 @@
-## Combo Reward and Raising
+# Combo Reward and Raising
 
 During a game session, a player may stake more capital into the pot to get more gems for greater risk but also greater potential return. This action is called "raising". A player is given an opportunity to raise only when a player wins a combo reward.
 
-There are two combo reward types in Duper: a 2-card combo reward and a 3-card one. Every time a player produces a unit using a 2-card or 3-card combo, the Combo Reward Panel compares the combo with the current top combo since the last reward round. Then, in a reward round (e.g. Round 7 for 2-card combos), the player who used the top combo gets the corresponding bonus card (e.g. a tank card). A bonus card may be used anytime in the rest of the session to instantly spawn 1 troop of the particular troop class anywhere on the player’s territory.
+### Combo Reward
 
-| Combo Reward Class | Includes                     | Comparison             | Bonus Card                        | Round Triggered      |
-| :----------------- | :--------------------------- | :--------------------- | :-------------------------------- | :------------------- |
-| 2-card combo       | pairs                        | rank                   | a tank                            | Round 3, 7, 11, etc. |
-| 3-card combo       | straight, flush, 3 of a kind | 3 of a kind, then rank | a plane or fort (50% chance each) | Round 5, 9, 13, etc. |
+Combo rewards are a way for players to get additional resources through spending cards. A reward is sent out every 2 rounds. Each reward may be one of the four with 25\% chance each: 1 tank, 3 infantries, 2 gold, 5 gold. The reward for the next reward is displayed on the Combo Reward Panel in advance.
 
-Every time a combo reward is won, the player also gains an opportunity to raise with the option of not doing so. If the player decides to raise, he mints 3 additional gems and stakes in another $(\text{initial stake} \times 0.6 \times \# (\text{raises by player} + 1))$.
+Every time a player uses cards in production, the Combo Reward Panel compares the used combo with the current top combo since the last reward round. Then, when the next reward round comes, the player who have used the top combo gets the corresponding bonus card (e.g. a tank card). A bonus card may be used anytime in the rest of the session to instantly spawn troops of the particular troop class and amount anywhere on the player’s territory.
 
-> Example: Suppose the stake is 10 and total pot is 50. To raise the first time, a player needs to pay $10\times0.6\times(0+1)=6$ and ends up with 13 gems total. To raise a second time, he would need to pay $10\times0.6\times(1+1)=12$ and end up with 16 gems total.
+Combos are ranked in the following manner:
+
+- Combo type: 3-card straight flush > three of a kind > 3-card flush/straight > pair
+- If tied, the top rank card of each combo is compared.
+- If still tied, the combos are ranked equally and both players get the combo reward.
+
+For example, 3♥️3♠️3♣️ (three of a kind) is ranked higher than K♦️3♦️2♦️ (flush), which is higher than Q♥️J♥️10♦️ (straight), which is higher than A♠️A♠️ (pair).
+
+### Raising
+
+Every time a combo reward is won, the player also gains an opportunity to raise (with the option of not doing so). If the player decides to raise, they mint 3 additional gems, and each one costs 10% of the lowest pre-game bid. After each raise, the cost per raise increments by 5%.
+
+> _Example: If the lowest bid is 100 Sparks (from Purple), the first time a player raises, they pay 3 gems \* 10% \* 100 min buy-in = 30 Sparks. Next time, the unit price of a gem rises to 15%. To mint 3 gems, the player will need to put additional 45 Sparks in the pot._
