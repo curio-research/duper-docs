@@ -2,7 +2,7 @@
   "intro": "Introduction",
   "modes": "Game Modes",
   "community-rules": "Community Rules",
-  "referral": "\"Super Duper Host\" Referral Program",
+  "referral": "Referral Program",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
@@ -11,7 +11,7 @@
   "wiki": "Game Wiki",
   "assets": "Assets",
   "seasons": {
-    "title": "Alpha Seasons",
+    "title": "Seasons",
     "type": "separator"
   },
   "season-1": "[LIVE NOW] Season I",
