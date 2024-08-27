@@ -16,6 +16,8 @@ Combos are ranked in the following manner:
 
 For example, 3♥️3♠️3♣️ (three of a kind) is ranked higher than K♦️3♦️2♦️ (flush), which is higher than Q♥️J♥️10♦️ (straight), which is higher than A♠️A♠️ (pair).
 
+Edge case: The Ace in an A23 straight is treated as the lowest card rather than the highest, compared to any other card combos. For example, an A♠️2♠️3♣️ (straight) is ranked lower than a K♦️J♦️5♦️ (flush) because the Ace is a low card in this case. 
+
 ### Raising
 
 Every time a combo reward is won, the player also gains an opportunity to raise (with the option of not doing so). If the player decides to raise, they mint 3 additional gems, and each one costs 10% of the lowest pre-game bid. After each raise, the cost per raise increments by 10%.
