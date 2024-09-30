@@ -10,12 +10,16 @@
   },
   "index": "Quick Start",
   "wiki": "Game Wiki",
-  "assets": "Assets",
+  "economy": {
+    "title": "Economy",
+    "type": "separator"
+  },
+  "sparks": "Sparks",
+  "emblems": "Emblems",
   "seasons": {
     "title": "Seasons",
     "type": "separator"
   },
-  "season-1": "Season I",
   "season-2": "Upcoming: Season II",
   "past": "Past",
   "play": {
