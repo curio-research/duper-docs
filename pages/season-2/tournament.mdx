@@ -15,12 +15,12 @@ If you're new to Duper, start from the [Quick Start](../index) page.
 - Players who have played 10+ ranked/casual games in S1 and S2 are classified as "old players", and can participate in the tournament the same. However, to give new players a chance, all old players' scores towards themselves and their guilds will only start counting in the 2nd week of the tournament.
 - Leaderboard score calculation
   - Individual player score calculation
-    - Casual game: (payout / 100 Sparks) * 1
-    - Ranked game: (payout / 0.005 ETH) * 10
+    - Casual game: payout
+    - Ranked game: (payout / 0.005 ETH) \* 1000
     - Activated (i.e. owns Season Pass) player multiplier: 3x for all games played by this player
     - Example: A is activated and has played 5 casual games with 120 Sparks payout each. B is not activated and has played 2 ranked games with 0.004 ETH payout each.
-      - A's score: (120 * 5 / 100) * 3 = 18 points
-      - B's score: (0.004 * 2 / 0.005) * 10 = 16 points
+      - A's score: (120 _ 5 / 100) _ 3 = 18 points
+      - B's score: (0.004 _ 2 / 0.005) _ 10 = 16 points
   - Guild score calculation
     - If guild has \<=5 active players: The guild score is simply the sum of all its players' scores.
     - If guild has \>5 active players: The top 5 players in each guild, ranked by score, still get directly added up to the guild score. Players 6-25 have their scores multiplied by (25-_i_)/20, where _i_ is the player's score rank within the guild. This is to give smaller guilds a chance while still counting significant contributions to additional players in larger guilds.
@@ -38,4 +38,3 @@ If you're new to Duper, start from the [Quick Start](../index) page.
 - More details and prizes TBA after Stage 1.
 
 ## Other Notes
-
