@@ -4,7 +4,7 @@ The ranking system is designed to make the game more competitive and rewarding f
 
 ### Core Mechanics
 
-Players progress through four main ranks: Bronze, Silver, Gold, and Super Duper. Each rank has unique rewards and challenges, with XP determining your progress.
+Players progress through four main ranks: Bronze, Silver, Gold, and Super Duper. Each rank has unique rewards, with XP determining your progress.
 
 | Rank | Casual Games (Loss/Win/Biggest Earner) | Ranked Games (Loss/Win/Biggest Earner) | Required XP |
 | --- | --- | --- | --- |
@@ -17,17 +17,13 @@ We'll be introducing more ranks in the future, and Super Duper's XP will be inhe
 
 ### Relative Difficulty Score (RDS)
 
-The RDS system adjusts XP rewards based on player ranks in each game.
+The RDS (Relative Difficulty Score) works by calculating the average rank value of all players in a game. Each rank has a numerical value:
 
-Rank values: Bronze (1), Silver (2), Gold (3), Super Duper (4)
+- Bronze = 1, Silver = 2, Gold = 3, Super Duper = 4
 
-- Example game with 3 Bronze (one winner), 1 Gold (loser), 1 Super Duper (loser)
-    - RDS = (1+1+1+4+3) ÷ 5 = 2
-    - Bronze winner bonus: +1 XP
-    - Bronze losers won't receive any penalties, as their rank value is below the RDS
-    - Gold loser penalties: -1 XP
-    - Super Duper loser penalties: -2 XP
-    - Higher ranks get penalties when losing
+For example, in a game with 3 Bronze players, 1 Gold player, and 1 Super Duper, the RDS would be (1+1+1+4+3) ÷ 5 = 2. This score then determines XP bonuses for lower-ranked players and penalties for higher-ranked players.
+
+Let’s say in that game, a bronze player is the sole winner. They will receie 2 - 1 = 1 XP bonus. The gold player will receive 3 - 2 = 1 XP penalty, and the super duper will receive 4 - 2 = 2 XP penalty.
 
 This ensures fair competition between different ranks.
 
