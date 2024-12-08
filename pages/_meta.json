@@ -1,27 +1,26 @@
 {
   "intro": "Introduction",
-  "modes": "Game Modes",
-  "lore": "Lore",
-  "community-rules": "Community Rules",
-  "referral": "Referral Program",
   "core-game": {
     "title": "Core Game",
     "type": "separator"
   },
   "index": "Quick Start",
   "wiki": "Game Wiki",
-  "economy": {
-    "title": "Economy",
+  "ecosystem": {
+    "title": "Ecosystem",
     "type": "separator"
   },
-  "sparks": "Sparks",
-  "emblems": "Emblems",
+  "modes": "Game Modes",
+  "assets": "Assets",
+  "lore": "Lore",
+  "community-rules": "Community Rules",
+  "progression": "Progression",
+  "referral": "Referral Program",
   "seasons": {
     "title": "Seasons",
     "type": "separator"
   },
   "season-3": "Live: Season III",
-  "progression-system": "Progression System",
   "past": "Past",
   "play": {
     "title": "Game Website ↗",
