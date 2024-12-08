@@ -6,11 +6,11 @@
   },
   "index": "Quick Start",
   "wiki": "Game Wiki",
+  "modes": "Game Modes",
   "ecosystem": {
     "title": "Ecosystem",
     "type": "separator"
   },
-  "modes": "Game Modes",
   "assets": "Assets",
   "lore": "Lore",
   "community-rules": "Community Rules",
