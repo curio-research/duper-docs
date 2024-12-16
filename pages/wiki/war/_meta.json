@@ -2,5 +2,6 @@
   "units": "Units",
   "talents": "Talents",
   "movement": "Movement",
-  "battle": "Battle"
+  "battle": "Battle",
+  "elimination": "Player Elimination"
 }
