@@ -2,16 +2,16 @@
 
 Trades are how resources flow between players. They help players achieve otherwise difficult actions, such as collecting a combo, launching a 2-step attack in a turn, and building a fort.
 
-Cards swap and blueprint purchase are initiated by a player at the start of their turn. Each player can only do one trade per round during their trading window. These trades are automatically accepted.
+A player may initiate cards swap or blueprint purchase at the start of their turn. Each player can only perform one trade per round during their trading window. These trades are automatically accepted and cannot be rejected by the counterparty.
 
-At any time, a player can initiate the other types of trades: swap gems, sell gem, and buy attack point. These trades must be accepted by the recipient player to take place.
+At any time, a player can initiate the other types of trades: swap gems, sell gem, and buy attack point. Unlike the cards swap and blueprint purchase trades, the counterparty can accept or reject the trade.
 
- and must be accepted by the recipient player to take place. There are 5 different types of trades in Duper:
+There are 5 different types of trades in Duper:
 
 | Trade Class      | Initiator gets         | Recipient gets                                    | Initiator Prerequisite                              | Usage Limit                       |
 | ---------------- | ---------------------- | ------------------------------------------------- | --------------------------------------------------- | --------------------------------- |
-| Buy blueprint    | 1 chosen blueprint     | 1 initiator-minted gem                            | -                                                   | unlimited                         |
-| Swap cards       | 1 chosen card          | 1 provided card + 1 initiator-minted gem + 1 gold | adjacent to recipient OR has economist              | 2 per round between any 2 players |
+| Buy blueprint    | 1 chosen blueprint     | 1 initiator-minted gem                            | adjacent to recipient OR has economist              | only during trading window beginning of turn; cannot use if chose swap cards |
+| Swap cards       | 1 chosen card          | 1 provided card + 1 initiator-minted gem + 1 gold | adjacent to recipient OR has economist              | only during trading window beginning of turn; cannot use if chose buy blueprint |
 | Sell gem         | 4 gold                 | 1 sold gem (cannot be initiator-minted)           | has economist                                       | 1 per round                       |
 | Swap gems        | 1 recipient-minted gem | 2 gold + 1 initiator-minted gem                   | has level-3 capital AND (adjacent OR has economist) | 1 per round                       |
 | Buy attack point | 1 attack point         | 1 initiator-minted gem                            | has economist                                       | 1 per game session                |
