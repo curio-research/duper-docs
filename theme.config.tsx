@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     const { asPath } = useRouter();
     return {
-      titleTemplate: asPath === "/" ? "Duper" : "%s — Duper",
+      titleTemplate: asPath === "/" ? "Quick Start — Duper Docs" : "%s — Duper Docs",
     };
   },
   project: {
@@ -39,7 +39,7 @@ const config: DocsThemeConfig = {
   ),
   docsRepositoryBase: "https://github.com/curio-research/duper-docs/tree/main/",
   footer: {
-    text: "© 2024 Duper",
+    text: "© 2024-2025 Duper",
   },
   darkMode: true,
   primaryHue: {
