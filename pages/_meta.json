@@ -7,21 +7,20 @@
   "index": "Quick Start",
   "wiki": "Game Wiki",
   "modes": "Game Modes",
+  "lore": "Lore",
   "ecosystem": {
     "title": "Ecosystem",
     "type": "separator"
   },
-  "assets": "Assets",
-  "lore": "Lore",
   "community-rules": "Community Rules",
+  "assets": "Assets",
   "progression": "Progression",
   "referral": "Referral Program",
   "seasons": {
     "title": "Seasons",
     "type": "separator"
   },
-  "season-3": "Live: Season III",
-  "past": "Past",
+  "season-4": "Season IV",
   "play": {
     "title": "Game Website ↗",
     "type": "page",
