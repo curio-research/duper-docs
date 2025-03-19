@@ -1,6 +1,13 @@
 # Map
 
-The map is composed of 33 tiles of 3 different tile levels. The center and corner tiles where players spawn are always level-1 tiles; the other tile levels are randomized. Tile levels don’t change (except when a player is defeated — their capital's tile then turns into a level-3 tile).
+The game features four different map layouts:
+
+- Classic Arena (33 tiles)
+- Backstab Valley (33 tiles)
+- United Front (33 tiles)
+- Blitzkrieg (29 tiles) - A faster-paced variant where four tiles are removed and the victory condition is set to controlling 10 tiles
+
+The map is composed of tiles of 3 different tile levels. The center and corner tiles where players spawn are always level-1 tiles; the other tile levels are randomized. Tile levels don't change (except when a player is defeated — their capital's tile then turns into a level-3 tile).
 
 Here's the table of tile levels and their properties:
 
@@ -12,4 +19,22 @@ Here's the table of tile levels and their properties:
 
 When a session begins, except the 5 tiles where player capitals spawn, all other tiles have barbarians on them with strengths corresponding to their levels. The "One-Time Reward" is sent out for defeating the barbarians on a tile and capturing the tile for the first time — note that capturing another player's tile does not give any reward. The "Roundly Yield" is sent out to the owner at the beginning of each round. The "Tile Buff" is the defense buff (only applies to defense, not offense) that the tile gives to the owner's units stationed on it.
 
-A tile’s level and the unit classes on top are visible to players if and only if one of the players owns a tile that is adjacent. A player can see who owns any tile, but does not know the number of troops stationed on any tile except their own. This is a core element of deception — you may tell another player that you own 50 infantries on a valuable tile when you actually just have 1.
+A tile's level and the unit classes on top are visible to players if and only if one of the players owns a tile that is adjacent. A player can see who owns any tile, but does not know the number of troops stationed on any tile except their own. This is a core element of deception — you may tell another player that you own 50 infantries on a valuable tile when you actually just have 1.
+
+## Map Layouts
+
+### Blitzkrieg
+
+![Blitzkrieg](../../../public/Blitzkrieg.png)
+
+### Backstab Valley
+
+![Backstab Valley](../../../public/BackstabValley.png)
+
+### United Front
+
+![United Front](../../../public/UnitedFront.png)
+
+### Classic Arena
+
+![Classic Arena](../../../public/ClassicArena.png)
