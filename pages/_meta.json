@@ -14,24 +14,25 @@
   },
   "community-rules": "Community Rules",
   "assets": "Assets",
-  "progression": "Progression",
+  "status-xp": "Status and XP",
   "referral": "Referral Program",
+  "tournaments": "Tournaments",
   "seasons": {
     "title": "Seasons",
     "type": "separator"
   },
-  "season-5": "Season V",
+  "season-5": "LIVE: Season V",
   "past": "Past",
   "play": {
-    "title": "Game Website ↗",
+    "title": "Play ↗",
     "type": "page",
     "href": "https://www.duper.gg",
     "newWindow": true
   },
-  "twitter": {
-    "title": "Twitter ↗",
+  "x": {
+    "title": "X ↗",
     "type": "page",
-    "href": "https://twitter.com/playduper",
+    "href": "https://x.com/playduper",
     "newWindow": true
   },
   "discord": {
@@ -43,11 +44,29 @@
   "youtube": {
     "title": "YouTube ↗",
     "type": "page",
-    "href": "https://youtube.com/@dupergame",
+    "href": "https://youtube.com/@playduper",
+    "newWindow": true
+  },
+  "tiktok": {
+    "title": "TikTok ↗",
+    "type": "page",
+    "href": "https://tiktok.com/@playduper",
+    "newWindow": true
+  },
+  "reddit": {
+    "title": "Reddit ↗",
+    "type": "page",
+    "href": "https://reddit.com/r/duper",
+    "newWindow": true
+  },
+  "instagram": {
+    "title": "Instagram ↗",
+    "type": "page",
+    "href": "https://instagram.com/playduper",
     "newWindow": true
   },
   "calendar": {
-    "title": "Google Calendar ↗",
+    "title": "Calendar ↗",
     "type": "page",
     "href": "https://calendar.google.com/calendar/u/1?cid=Y182Y2ZlZjM4ODIwMDQ0MmM3Y2YzMjdhZWEwNmVmMWVjZDUzMTBlZGMxMzdjNzhkZGM3YWFlMzM3MTEzMmY4YTA3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
     "newWindow": true
