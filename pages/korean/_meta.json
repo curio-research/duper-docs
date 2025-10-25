@@ -1,0 +1,26 @@
+{
+  "intro": "소개",
+  "index": "빠른 시작",
+  "core-game": {
+    "title": "핵심 게임",
+    "type": "separator"
+  },
+  "wiki": "게임 위키",
+  "modes": "게임 모드",
+  "lore": "세계관",
+  "ecosystem": {
+    "title": "생태계",
+    "type": "separator"
+  },
+  "community-rules": "커뮤니티 규칙",
+  "assets": "에셋",
+  "status-xp": "상태와 XP",
+  "referral": "추천인 프로그램",
+  "tournaments": "토너먼트",
+  "seasons": {
+    "title": "시즌",
+    "type": "separator"
+  },
+  "season-6": "LIVE: 시즌 VI",
+  "timeline": "연대표"
+}

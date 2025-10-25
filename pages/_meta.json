@@ -23,16 +23,21 @@
   },
   "season-6": "LIVE: Season VI",
   "timeline": "Timeline",
+  "international": {
+    "title": "International 🌍︎ (Maintained by Community)",
+    "type": "separator"
+  },
+  "korean": "🇰🇷 한국어",
   "play": {
-    "title": "Play ↗",
+    "title": "Play 💻 ↗",
     "type": "page",
     "href": "https://www.duper.gg",
     "newWindow": true
   },
-  "x": {
-    "title": "X ↗",
+  "download": {
+    "title": "Play 📱 (🇺🇸-only) ↗",
     "type": "page",
-    "href": "https://x.com/playduper",
+    "href": "https://www.duper.gg/download",
     "newWindow": true
   },
   "discord": {
@@ -53,6 +58,12 @@
     "href": "https://tiktok.com/@playduper",
     "newWindow": true
   },
+  "x": {
+    "title": "X ↗",
+    "type": "page",
+    "href": "https://x.com/playduper",
+    "newWindow": true
+  },
   "reddit": {
     "title": "Reddit ↗",
     "type": "page",
@@ -63,12 +74,6 @@
     "title": "Instagram ↗",
     "type": "page",
     "href": "https://instagram.com/playduper",
-    "newWindow": true
-  },
-  "calendar": {
-    "title": "Calendar ↗",
-    "type": "page",
-    "href": "https://calendar.google.com/calendar/u/1?cid=Y182Y2ZlZjM4ODIwMDQ0MmM3Y2YzMjdhZWEwNmVmMWVjZDUzMTBlZGMxMzdjNzhkZGM3YWFlMzM3MTEzMmY4YTA3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
     "newWindow": true
   }
 }
