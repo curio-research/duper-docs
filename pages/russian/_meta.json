@@ -1,0 +1,27 @@
+
+{
+  "intro": "Введение",
+  "core-game": {
+    "title": "Основная Игра",
+    "type": "separator"
+  },
+  "quick-start": "Быстрый Старт",
+  "wiki": "Вики",
+  "modes": "Игровые Режимы",
+  "lore": "Лор",
+  "ecosystem": {
+    "title": "Экосистема",
+    "type": "separator"
+  },
+  "community-rules": "Правила Сообщества",
+  "assets": "Ассеты",
+  "status-xp": "Статус и Опыт",
+  "referral": "Программа Реферальных",
+  "tournaments": "Турниры",
+  "seasons": {
+    "title": "Сезоны",
+    "type": "separator"
+  },
+  "season-6": "LIVE: Сезон VI",
+  "timeline": "Временная Шкала"
+}
