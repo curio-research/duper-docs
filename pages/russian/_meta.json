@@ -1,27 +1,26 @@
-
 {
   "intro": "Введение",
+  "index": "Быстрый старт",
   "core-game": {
-    "title": "Основная Игра",
+    "title": "Основы Игры",
     "type": "separator"
   },
-  "quick-start": "Быстрый Старт",
   "wiki": "Вики",
-  "modes": "Игровые Режимы",
+  "modes": "Режимы",
   "lore": "Лор",
   "ecosystem": {
     "title": "Экосистема",
     "type": "separator"
   },
   "community-rules": "Правила Сообщества",
-  "assets": "Ассеты",
-  "status-xp": "Статус и Опыт",
-  "referral": "Программа Реферальных",
+  "assets": "Актвы",
+  "status-xp": "Опыт XP",
+  "referral": "Реферальная Программа",
   "tournaments": "Турниры",
   "seasons": {
     "title": "Сезоны",
     "type": "separator"
   },
   "season-6": "LIVE: Сезон VI",
-  "timeline": "Временная Шкала"
+  "timeline": "События"
 }
