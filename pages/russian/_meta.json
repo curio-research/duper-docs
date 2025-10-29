@@ -1,6 +1,6 @@
 {
   "intro": "Введение",
-  "index": "Быстрый старт",
+  "quick-start": "Быстрый старт",
   "core-game": {
     "title": "Основы Игры",
     "type": "separator"
