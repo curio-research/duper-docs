@@ -4,24 +4,24 @@ Trades are how resources flow between players. They help players achieve otherwi
 
 A player may initiate cards swap or blueprint purchase at the start of the shared round. Each player can only perform one trade per round during the trading window. These trades are automatically accepted and cannot be rejected by the counterparty.
 
-At any time, a player can initiate the other types of trades: swap gems, sell gem, and buy attack point. Unlike the cards swap and blueprint purchase trades, the counterparty can accept or reject the trade.
+At any time, a player can initiate the other types of trades: swap keys, sell key, and buy attack point. Unlike the cards swap and blueprint purchase trades, the counterparty can accept or reject the trade.
 
 There are 5 different types of trades in Duper:
 
 | Trade Class      | Initiator gets         | Recipient gets                                    | Initiator Prerequisite                              | Usage Limit                       |
 | ---------------- | ---------------------- | ------------------------------------------------- | --------------------------------------------------- | --------------------------------- |
-| Buy blueprint    | 1 chosen blueprint     | 1 initiator-minted gem                            | adjacent to recipient OR has economist              | only during trading window beginning of round; cannot use if chose swap cards |
-| Swap cards       | 1 chosen card          | 1 provided card + 1 initiator-minted gem + 1 gold | adjacent to recipient OR has economist              | only during trading window beginning of round; cannot use if chose buy blueprint |
-| Sell gem         | 4 gold                 | 1 sold gem (cannot be initiator-minted)           | has economist                                       | 1 per round                       |
-| Swap gems        | 1 recipient-minted gem | 2 gold + 1 initiator-minted gem                   | adjacent to recipient OR has economist              | 1 per round                       |
-| Buy attack point | 1 attack point         | 1 initiator-minted gem                            | has economist                                       | 1 per game session                |
+| Buy blueprint    | 1 chosen blueprint     | 1 initiator-colored key                            | borders recipient OR has completed economy center             | only during trading window beginning of round; cannot use if chose swap cards |
+| Swap cards       | 1 chosen card          | 1 provided card + 1 initiator-colored key + 1 gold | borders recipient OR has completed economy center              | only during trading window beginning of round; cannot use if chose buy blueprint |
+| Sell key         | 4 gold                 | 1 sold key (cannot be initiator-colored)           | has completed economy center                                       | 1 per round                       |
+| Swap keys        | 1 recipient-colored key | 2 gold + 1 initiator-colored key                   | borders recipient OR has completed economy center              | 1 per round                       |
+| Buy attack point | 1 attack point         | 1 initiator-colored key                            | has completed economy center                                       | 1 per game session                |
 
-Note that whatever the initiator gets comes from the recipient, and vice versa. For example, if Player A initiates a “swap gems” trade to Player B but does not have at least 2 gold, the request will fail.
+Note that whatever the initiator gets comes from the recipient, and vice versa. For example, if Player A initiates a “swap keys” trade to Player B but does not have at least 2 gold, the request will fail.
 
 More details:
 
-- Buy blueprint: If a player wants a plane or a fort but does not have the corresponding researcher, he may wish to initiate a “buy blueprint” trade to a player who has the researcher.
-- Swap cards: Let's say player A has 3 cards. Other players who either own an adjacent tile to Player A's tiles or own an economist would see his cards on the top of the chat. One of them, Player B, may then initiate the “swap card” trade by clicking on her desired card and providing one of her own cards.
-- Sell gem: Note that the initiator may only sell a gem he owns that is not minted by him. The “sell gem” trade often creates unexpected shifts in diplomacy.
+- Buy blueprint: If a player wants a plane or a fort but does not have the corresponding completed center, he may wish to initiate a “buy blueprint” trade to a player who has the researcher.
+- Swap cards: Let's say player A has 3 cards. Other players who either borders Player A's tiles or has a completed economy center would see his cards on the top of the chat. One of them, Player B, may then initiate the “swap card” trade by clicking on her desired card and providing one of her own cards.
+- Sell key: Note that the initiator may only sell a key he owns that is not his color. The “sell key” trade often creates unexpected shifts in diplomacy.
 
 Note: A player may choose to hide some of his cards from others, for example when he is secretly collecting a 5-card straight flush. Click on the cards you wish to hide and click the crossed eye button to do so. To unhide them, click on the cards you wish to unhide and click the open eye button.

@@ -1,30 +1,30 @@
-# Battle
+# Battle and Power
 
-A battle takes place when a player decides to attack a tile owned by another player or occupied by barbarian troops (NPC). Battles are the ultimate way in which a player acquires new tiles and eliminates opponents, so it's one of the most important actions in Duper.
+A battle takes place when a player decides to attack a tile owned by another player or occupied by NPCs. Battles are the ultimate way in which a player acquires new tiles and eliminates opponents, so it's one of the most important actions in Duper.
 
 To attack, select your tile and drag it onto the target tile, which should flash red if it is a valid target for attack. Unlike movement, no splitting of troops is allowed — a normal attack uses _all_ troops on the source tile, and a long-distance attack uses _all_ planes on the source tile.
 
-The result of a battle depends on the aggregate strengths of both sides. If the attack strength is greater than the defense strength, the attack succeeds: The target tile becomes owned by the attacker. Otherwise, the attack fails.
+The result of a battle depends on the aggregate powers of both sides. If the attack power is greater than the defense power, the attack succeeds: The target tile becomes owned by the attacker. Otherwise, the attack fails.
 
 ### Battle Calculation
 
 $$
-\text{attack strength} = \sum \text{attacking troop strength incl. supporting tanks}
+\text{attack power} = \sum \text{attacking troop power incl. supporting tanks}
 $$
 
 $$
-\text{defense strength} = \left(\sum \text{defending troop strength incl. supporting tanks}\right) \newline + \, \text{defending building strength} + \text{tile buff} + \text{gem buff}
+\text{defense power} = \left(\sum \text{defending troop power incl. supporting tanks}\right) \newline + \, \text{defending building power} + \text{tile buff} + \text{key buff}
 $$
 
-See the [Unit Table](./units#unit-table) for the strength of each unit class.
+See the [Unit Table](./units#unit-table) for the power of each unit class.
 
 - The defender tile buff is 1 for a level-1 tile, 2 for a level-2 tile, and 4 for a level-3 tile.
-- The defender gem buff is 2 times the number of attacker-minted gems owned by the defender.
-- If there’s a fort on the attacker tile, the fort’s strength is included in the attacking strength.
+- The defender key buff is 2 times the number of attacker-colored keys owned by the defender.
+- If there’s a fort on the attacker tile, the fort’s power is included in the attacking power.
 
-If the attack succeeds, all defending units including the supporting tanks die, and the attacking units are dealt damage equal to the defense strength. The surviving non-supporting attacking troops (if any) then move onto the now conquered defender tile. If the attack fails, all attacking units including the supporting tanks die, and the defending units are dealt damage equal to the attack strength minus the tile buff and gem buff.
+If the attack succeeds, all defending units including the supporting tanks die, and the attacking units are dealt damage equal to the defense power. The surviving non-supporting attacking troops (if any) then move onto the now conquered defender tile. If the attack fails, all attacking units including the supporting tanks die, and the defending units are dealt damage equal to the attack power minus the tile buff and key buff.
 
-> _Example: Suppose Player A attacks Player B. Player A has 8 infantries (+8 attack strength), 2 planes loading 2 tanks (+8 attack strength, because loaded troops have no strength in battles), and 1 fort (+7 attack strength) on the attacking tile and 3 tanks (+9 attack strength) on tiles adjacent to the attacking tile. Player B has 5 tanks (+15 defense strength) and 1 research center with an economist (+0 defense strength) on the defending tile and 4 tanks (+12 defense strength) on tiles adjacent to the defending tile. The defending tile is level-3 (+4 defense strength), and Player B has 2 gems minted by Player A (+2 defense strength). In total, the attack strength is 32 and the defense strength is 33. The attack fails. Player A loses the 8 infantries, 2 planes and the loaded tanks, 1 fort, and 3 supporting tanks. Player B’s troops get injured $32-4-2=26$ strength in total. The tanks on the defender tile have death priority of 2 whereas those supporting nearby have death priority of 4, so the former die first, bringing down remaining damage to 11. The remaining damage is enough to kill 3 tanks but not the last one, so 1 of the 4 defender’s supporting tanks survive._
+> _Example: Suppose Player A attacks Player B. Player A has 8 soldiers (+8 attack power), 2 planes loading 2 tanks (+8 attack power, because loaded troops have no power in battles), and 1 fort (+7 attack power) on the attacking tile and 3 tanks (+9 attack power) on tiles bordering the attacking tile. Player B has 5 tanks (+15 defense power) and 1 completed economy center (+0 defense power) on the defending tile and 4 tanks (+12 defense power) on tiles bordering the defending tile. The defending tile is level-3 (+4 defense power), and Player B has 2 keys of Player A's color (+2 defense power). In total, the attack power is 32 and the defense power is 33. The attack fails. Player A loses the 8 soldiers, 2 planes and the loaded tanks, 1 fort, and 3 supporting tanks. Player B’s troops get injured $32-4-2=26$ power in total. The tanks on the defender tile have death priority of 2 whereas those supporting nearby have death priority of 4, so the former die first, bringing down remaining damage to 11. The remaining damage is enough to kill 3 tanks but not the last one, so 1 of the 4 defender’s supporting tanks survive._
 
 In battles involving one or two capitals, as long as the capital on one or both sides die, the corresponding one or both players are eliminated, and their tiles disappear permanently for the rest of the session.
 
@@ -32,5 +32,5 @@ In battles involving one or two capitals, as long as the capital on one or both 
 
 - When a tank or fort is attacking or defending, it does not support a nearby battle.
 - When a tank or fort is supporting an attack/defense, it cannot attack or be attacked.
-- When the total strengths of both sides are equal, the attack fails and the attacker does not take the tile. However, if the defender's tile has a capital or supercapital, the defender dies, and in that case the attacker DOES take the tile.
-- An attack on a capital or supercapital, regardless of strengths and outcome, has 35% chance of stealing one of the cards from the defender.
+- When the total powers of both sides are equal, the attack fails and the attacker does not take the tile. However, if the defender's tile has a capital or supercapital, the defender dies, and in that case the attacker DOES take the tile.
+- An attack on a capital or supercapital, regardless of powers and outcome, has 35% chance of stealing one of the cards from the defender.

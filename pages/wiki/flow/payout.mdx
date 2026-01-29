@@ -1,8 +1,8 @@
 # Payout
 
-When someone triggers a Victory Condition, the session ends, and payouts are settled based on player entry fees and gem distribution as follows:
+When a player triggers an End Condition, the match ends and the prize vault changes to that player's color. Payouts are then settled based on player entry fees and key distribution as follows:
 
-- The winner first gets an amount worth their entry fee from the prize pool, including any amount they have raised.
-- Then, the rest of the pool is divided into $N$ equal chunks where $N$ is the number of total gems minted by the winner. The chunks are then distributed to the current owners of the winner-minted gems.
+- The game ender first gets an amount worth their entry fee from the prize pool, including any amount they have raised.
+- Then, the rest of the pool is divided into $N$ equal chunks where $N$ is the number of total keys matching the vault's color. The chunks are then distributed to the current owners of those keys.
 
-> Example: Suppose the 5 players are called A B C D E, and each player puts up 10 and total entry fees are 50. Suppose nobody raises for simplicity's sake. B ends up winning when A owns 4 of B-minted gems, B owns 2, C owns 3, D owns 1, and E owns 0. B takes 10 first. The remaining $50-10=40$ is divided into 10 chunks each of $40\div10=4$. In this process, A gets $4\times4=16$; B gets 8; C gets 12; D gets 4; E gets nothing. In total, A earns $16-10=6$; B earns 8; C earns 2; D loses 6; E loses 10.
+> Example: Suppose the 5 players are called A B C D E, and each player puts up 10 and total entry fees are 50. Suppose nobody raises for simplicity's sake. B ends up ending the game when A owns 4 of B-colored keys, B owns 2, C owns 3, D owns 1, and E owns 0. B takes 10 first. The remaining $50-10=40$ is divided into 10 chunks each of $40\div10=4$. In this process, A gets $4\times4=16$; B gets 8; C gets 12; D gets 4; E gets nothing. In total, A earns $16-10=6$; B earns 8; C earns 2; D loses 6; E loses 10.

@@ -1,6 +1,8 @@
 # Units
 
-Units include troops (air or ground) and buildings. Units are critical in Duper: Troops help players acquire tiles and progress toward a Tile Count Victory, and buildings train talents which unlock powerful abilities.
+Units include troops (air or ground) and buildings (capital or center).
+
+Units are critical in Duper: Troops help players acquire tiles and progress toward a Tile Count End; centers unlock powerful abilities when completed; capital provides critical gold yield and defense power for staying alive.
 
 To produce a unit, click on a tile and the Production Panel will show up to the right of the map. Click on the unit type you wish to produce, multiple times if you wish to produce multiple, and the units will be produced on the tile. The units will be ready to move or attack immediately.
 
@@ -9,7 +11,7 @@ A few general rules regarding units:
 - Each tile can only have 1 class of air troop and 1 class of ground troop at once, but there is no limit on how many troops there are.
 - Each tile can only have 1 building. There cannot be multiple buildings on the same tile.
 - Troops can move and initiate attacks. Troops may only attack an adjacent tile.
-- Buildings can neither move nor initiate attacks, but they have defense strength and may also die if defense fails.
+- Buildings can neither move nor initiate attacks, but they have defense power and may also die if defense fails.
 
 There are occasional exceptions to the above as we shall see below.
 
@@ -17,29 +19,29 @@ There are occasional exceptions to the above as we shall see below.
 
 Below is a list of all unit classes in Duper:
 
-| Unit Class                 | Production Cost                                         | Spawn Location | Layer    | Movement Stamina | Strength | Death Priority        | Class Exceptions                                     |
+| Unit Class                 | Production Cost                                         | Spawn Location | Layer    | Movement | Power | Death Priority        | Class Exceptions                                     |
 | :------------------------- | :------------------------------------------------------ | :------------- | :------- | :--------------- | :------- | :-------------------- | :--------------------------------------------------- |
-| Infantry                   | 1 gold                                                  | anywhere       | ground   | 1                | 1        | 1                     |                                                      |
-| Larva/Worm                 | - (barbarian)                                           | - (barbarian)  | ground   | 0                | 1        | 1                     |                                                      |
+| Soldier                    | 1 gold                                                  | anywhere       | ground   | 1                | 1        | 1                     |                                                      |
+| Larva/Worm                 | - (NPC)                                                 | - (NPC)        | ground   | 0                | 1        | 1                     |                                                      |
 | Tank                       | 1 gold and 1 pair                                       | capital lv1-3  | ground   | 5                | 3        | 2, or 5 if supporting | can support                                          |
-| Plane                      | 3 gold, 1 3-card flush or 3-of-a-kind, 1 plane researcher or blueprint | capital lv1-3  | air      | 7                | 4        | 3                     | can perform long-distance moves and attack; can load |
-| Fort                       | 3 gold, 1 3-card flush or 3-of-a-kind, 1 fort researcher or blueprint  | anywhere       | building | 0                | 7        | 1 if no troops on tile, otherwise same as the highest death priority troops on tile but only dies if all troops on tile die                     | can initiate attacks; can support if tanks inside  |
-| Research center            | 1 3-card straight or 3-of-a-kind                                    | anywhere       | building | 0                | 0        | - (doesn't die)                     |                                     |
+| Plane                      | 3 gold, 1 3-card flush or 3-of-a-kind, 1 completed plane center or blueprint | capital lv1-3  | air      | 7                | 4        | 3                     | can perform long-distance moves and attack; can load |
+| Fort                       | 3 gold, 1 3-card flush or 3-of-a-kind, 1 completed fort center or blueprint  | anywhere       | building | 0                | 7        | 1 if no troops on tile, otherwise same as the highest death priority troops on tile but only dies if all troops on tile die                     | can initiate attacks; can support if tanks inside  |
+| Center            | 1 3-card straight or 3-of-a-kind                        | anywhere       | building | 0                | 0        | - (doesn't die)                     |                                     |
 | Capital lv1                | -                                                       | -              | building | 0                | 9       | 6                     |                                                      |
 | Capital lv2                | 10 gold                                                 | capital lv1    | building | 0                | 16       | 6                     | replaces capital lv1; deals 1 card                   |
 | Capital lv3                | 18 gold                                                 | capital lv2    | building | 0                | 20       | 6                     | replaces capital lv2; deals 2 cards                  |
 | Capital lv4 (Supercapital) | none                                   | capital lv3    | ground   | 5                | 21       | 4                     | replaces capital lv3                                 |
 
-- Movement stamina is the number of tiles a unit can move per round by L1 distance, i.e. x-distance plus y-distance.
+- Movement is the number of tiles a unit can move per round by L1 distance, i.e. x-distance plus y-distance.
 - The lower a class’s death priority is, the earlier the class dies in a battle.
 
 ### Class Exceptions
 
-- Tanks can support: The strength of tanks on a tile may be included in battles (both attacks and defenses) involving adjacent tiles owned by the same player, given that there are units (troops or building) on those tiles. Empty tiles without units are not supported by tanks.
-- Planes can perform long-distance moves and attacks: A player may use planes to move onto a disconnected owned tile or to attack a non-adjacent enemy tile, provided that the planes have enough movement stamina to reach destination.
-- Planes can load: A stack of two or more planes can load up all ground troops on a tile for any period of time. Loaded troops are not taken into account for movement stamina and battle strength calculations.
+- Tanks can support: The power of tanks on a tile may be included in battles (both attacks and defenses) involving adjacent tiles owned by the same player, given that there are units (troops or building) on those tiles. Empty tiles without units are not supported by tanks.
+- Planes can perform long-distance moves and attacks: A player may use planes to move onto a disconnected owned tile or to attack a non-bordering enemy tile, provided that the planes have enough movement to reach destination.
+- Planes can load: A stack of two or more planes can load up all ground troops on a tile for any period of time. Loaded troops are not taken into account for movement and battle power calculations.
   - Loading troops is only recommended for transporting troops, because if the planes die in a battle, the loaded troops will also die.
 - Forts can initiate attacks: Unlike other buildings, a fort may be used to initiate attacks, but does not move onto the target tile if the attack succeeds. If the attack succeeds, 7 damage is taken by the fort before deducting troops in/on the fort. Only if the attack fails does the fort die.
-- Forts can support with tanks inside: If there are tanks stationed inside a fort, the fort's strength is added to the tanks' strength in battles involving adjacent tiles owned by the same player.
-- Level-2 to level-4 capitals aren’t produced per se. They are upgraded from the previous level, usually for the extra gold yield and defense strength.
+- Forts can support with tanks inside: If there are tanks stationed inside a fort, the fort's power is added to the tanks' power in battles involving adjacent tiles owned by the same player.
+- Level-2 to level-4 capitals aren’t produced per se. They are upgraded from the previous level, usually for the extra gold yield and defense power.
   - A special case is the upgrade from level-3 to level-4: The capital transforms from a building to a ground troop and thereby gains the ability to move and initiate attacks. However, the player also permanently loses the high capital gold yield as well as the ability to produce tanks and planes.
