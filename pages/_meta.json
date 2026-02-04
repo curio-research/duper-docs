@@ -27,8 +27,8 @@
     "title": "International 🌍︎ (Maintained by Community)",
     "type": "separator"
   },
-  "korean": "🇰🇷 한국어",
-  "russian": "🇷🇺 Русский",
+  "korean": "🇰🇷 한국어 [Under Maintenance]",
+  "russian": "🇷🇺 Русский [Under Maintenance]",
   "play": {
     "title": "Play 💻 ↗",
     "type": "page",
@@ -36,7 +36,7 @@
     "newWindow": true
   },
   "download": {
-    "title": "Play 📱 (currently US-only) ↗",
+    "title": "Play 📱 ↗",
     "type": "page",
     "href": "https://www.duper.gg/download",
     "newWindow": true
