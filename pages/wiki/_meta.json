@@ -1,7 +1,7 @@
 {
   "terminology": "Terminology",
-  "fundamentals": "Fundamentals",
-  "flow": "Flow",
-  "war": "Map and War Features",
-  "diplomacy": "Chat and Diplomacy Features"
+  "components": "Components",
+  "stages": "Game Stages",
+  "combat": "Map and Combat",
+  "diplomacy": "Chat and Diplomacy"
 }
